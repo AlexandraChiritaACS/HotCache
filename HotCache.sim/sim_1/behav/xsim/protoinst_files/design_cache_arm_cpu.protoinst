@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_cache_arm_cpu": {
+			"proto_instances": {
+			}
+		}
+	}
+}

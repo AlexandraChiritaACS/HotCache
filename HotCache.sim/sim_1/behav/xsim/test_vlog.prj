@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../HotCache.ip_user_files/bd/cache_cpu_design/ip/cache_cpu_design_chip_select_splitter_0_0/sim/cache_cpu_design_chip_select_splitter_0_0.v" \
+"../../../../HotCache.ip_user_files/bd/cache_cpu_design/ip/cache_cpu_design_data_splitter_0_0/sim/cache_cpu_design_data_splitter_0_0.v" \
+"../../../../HotCache.ip_user_files/bd/cache_cpu_design/ip/cache_cpu_design_mpc106fsm_0_0/sim/cache_cpu_design_mpc106fsm_0_0.v" \
+"../../../../HotCache.ip_user_files/bd/cache_cpu_design/ip/cache_cpu_design_mx9_sdramfsm_0_0/sim/cache_cpu_design_mx9_sdramfsm_0_0.v" \
+"../../../../HotCache.ip_user_files/bd/cache_cpu_design/ip/cache_cpu_design_powerpcfsm_0_0/sim/cache_cpu_design_powerpcfsm_0_0.v" \
+"../../../../HotCache.ip_user_files/bd/cache_cpu_design/sim/cache_cpu_design.v" \
+"../../../../../../../Downloads/2mx9_sdramfsm-hw.v" \
+"../../../../../../../Downloads/chip_select_splitter-hw.v" \
+"../../../../../../../Downloads/data_splitter-hw.v" \
+"../../../../../../../Downloads/mpc106fsm-hw.v" \
+"../../../../../../../Downloads/powerpcfsm-hw.v" \
+"../../../../HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v" \
+"../../../../../../../Downloads/test-hw.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

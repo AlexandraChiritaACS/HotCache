@@ -1,0 +1,196 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 18 23:10:27 2020
+# Process ID: 7496
+# Current directory: C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10992 C:\Users\alexandra.chirita98\OneDrive - Universitatea Politehnica Bucuresti\SMP\HotCache\HotCache.xpr
+# Log file: C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/vivado.log
+# Journal file: C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.xpr}
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new}
+close [ open {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v} w ]
+add_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+file mkdir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new}
+close [ open {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v} w ]
+add_files -fileset sim_1 {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CPU_TEST [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source CPU_TEST.tcl
+relaunch_sim
+create_bd_design "design_cache_arm_cpu"
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference ARM_CPU ARM_CPU_0
+create_bd_cell -type module -reference Data_Memory Data_Memory_0
+create_bd_cell -type module -reference IC IC_0
+set_property location {1.5 374 142} [get_bd_cells IC_0]
+connect_bd_net [get_bd_pins IC_0/PC_in] [get_bd_pins ARM_CPU_0/PC]
+connect_bd_net [get_bd_pins IC_0/instruction_out] [get_bd_pins ARM_CPU_0/IC]
+connect_bd_net [get_bd_pins Data_Memory_0/outputData] [get_bd_pins ARM_CPU_0/mem_data_in]
+connect_bd_net [get_bd_pins Data_Memory_0/CONTROL_MemWrite] [get_bd_pins ARM_CPU_0/control_memwrite_out]
+connect_bd_net [get_bd_pins Data_Memory_0/CONTROL_MemRead] [get_bd_pins ARM_CPU_0/control_memread_out]
+connect_bd_net [get_bd_pins Data_Memory_0/inputData] [get_bd_pins Data_Memory_0/outputData]
+undo
+connect_bd_net [get_bd_pins Data_Memory_0/inputAddress] [get_bd_pins ARM_CPU_0/mem_address_out]
+connect_bd_net [get_bd_pins Data_Memory_0/inputData] [get_bd_pins ARM_CPU_0/mem_data_out]
+startgroup
+make_bd_pins_external  [get_bd_pins ARM_CPU_0/RESET]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins ARM_CPU_0/CLOCK]
+endgroup
+make_wrapper -files [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}}] -top
+add_files -norecurse {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hdl/design_cache_arm_cpu_wrapper.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v}}
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v} w ]
+add_files -fileset sim_1 {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v}}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top CACHE_TEST [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+generate_target Simulation [get_files {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}}] -directory {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files} -ipstatic_source_dir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/modelsim} {questa=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/questa} {riviera=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/riviera} {activehdl=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source CACHE_TEST.tcl
+relaunch_sim
+close_sim
+close_sim
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hdl/design_cache_arm_cpu_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hdl/design_cache_arm_cpu_wrapper.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v}}
+create_bd_design "cache_cpu_design"
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_proc_ss:2.0 v_proc_ss_0
+endgroup
+delete_bd_objs [get_bd_cells v_proc_ss_0]
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}}
+add_files -norecurse {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/MC68000.V} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/DECODER.V} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/powerpcfsm.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/graphic_controller.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/mpc106fsm.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/Sram.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/core_logic.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/2mx9_sdramfsm.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/powerpcfsm.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/mpc106fsm.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/2mx9_sdramfsm.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/powerpcfsm.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/mpc106fsm.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/2mx9_sdramfsm.v}}
+create_bd_design "cache_cpu_design"
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/graphic_controller.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/DECODER.V}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/core_logic.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/MC68000.V}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/Sram.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/graphic_controller.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/DECODER.V} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/core_logic.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/MC68000.V} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/Sram.v}}
+add_files -norecurse {C:/Users/alexandra.chirita98/Downloads/mpc106fsm-hw.v C:/Users/alexandra.chirita98/Downloads/data_splitter-hw.v C:/Users/alexandra.chirita98/Downloads/2mx9_sdramfsm-hw.v C:/Users/alexandra.chirita98/Downloads/powerpcfsm-hw.v C:/Users/alexandra.chirita98/Downloads/chip_select_splitter-hw.v}
+set_property source_mgmt_mode All [current_project]
+startgroup
+create_bd_cell -type module -reference chip_select_splitter chip_select_splitter_0
+create_bd_cell -type module -reference data_splitter data_splitter_0
+create_bd_cell -type module -reference mpc106fsm mpc106fsm_0
+create_bd_cell -type module -reference mx9_sdramfsm mx9_sdramfsm_0
+create_bd_cell -type module -reference powerpcfsm powerpcfsm_0
+endgroup
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+open_bd_design {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins mpc106fsm_0/CLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins mx9_sdramfsm_0/CLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins powerpcfsm_0/CLK]
+endgroup
+undo
+set_property location {5.5 1216 449} [get_bd_cells mx9_sdramfsm_0]
+set_property location {1.5 363 442} [get_bd_cells mpc106fsm_0]
+set_property location {2 357 447} [get_bd_cells mpc106fsm_0]
+set_property location {2.5 621 451} [get_bd_cells data_splitter_0]
+set_property location {3 712 352} [get_bd_cells chip_select_splitter_0]
+set_property location {3.5 829 421} [get_bd_cells mx9_sdramfsm_0]
+connect_bd_net [get_bd_pins powerpcfsm_0/A] [get_bd_pins mpc106fsm_0/A]
+connect_bd_net [get_bd_pins powerpcfsm_0/BR] [get_bd_pins mpc106fsm_0/BR0]
+connect_bd_net [get_bd_pins powerpcfsm_0/BR] [get_bd_pins mpc106fsm_0/DH]
+undo
+connect_bd_net [get_bd_pins powerpcfsm_0/BR] [get_bd_pins mpc106fsm_0/DH]
+undo
+connect_bd_net [get_bd_pins powerpcfsm_0/DH] [get_bd_pins mpc106fsm_0/DH]
+connect_bd_net [get_bd_pins data_splitter_0/d_in] [get_bd_pins powerpcfsm_0/DH]
+connect_bd_net [get_bd_pins powerpcfsm_0/DL] [get_bd_pins mpc106fsm_0/DL]
+connect_bd_net [get_bd_pins powerpcfsm_0/TBST] [get_bd_pins mpc106fsm_0/TS]
+undo
+connect_bd_net [get_bd_pins powerpcfsm_0/TBST] [get_bd_pins mpc106fsm_0/TBST]
+connect_bd_net [get_bd_pins powerpcfsm_0/TS] [get_bd_pins mpc106fsm_0/TS]
+connect_bd_net [get_bd_pins powerpcfsm_0/TSIZ] [get_bd_pins mpc106fsm_0/TSIZ]
+connect_bd_net [get_bd_pins powerpcfsm_0/WT] [get_bd_pins mpc106fsm_0/WT]
+save_bd_design
+connect_bd_net [get_bd_pins powerpcfsm_0/AACK] [get_bd_pins mpc106fsm_0/AACK]
+connect_bd_net [get_bd_pins powerpcfsm_0/ARTRY] [get_bd_pins mpc106fsm_0/ARTRY]
+connect_bd_net [get_bd_pins powerpcfsm_0/BG] [get_bd_pins mpc106fsm_0/BG0]
+connect_bd_net [get_bd_pins powerpcfsm_0/DBG] [get_bd_pins mpc106fsm_0/DBG0]
+connect_bd_net [get_bd_pins powerpcfsm_0/TA] [get_bd_pins mpc106fsm_0/TA]
+connect_bd_net [get_bd_pins powerpcfsm_0/TT] [get_bd_pins mpc106fsm_0/TT]
+connect_bd_net [get_bd_pins mpc106fsm_0/SDMA] [get_bd_pins mx9_sdramfsm_0/A]
+connect_bd_net [get_bd_pins mpc106fsm_0/SDCAS] [get_bd_pins mx9_sdramfsm_0/CAS]
+connect_bd_net [get_bd_pins mpc106fsm_0/SDRAS] [get_bd_pins mx9_sdramfsm_0/RAS]
+connect_bd_net [get_bd_pins mpc106fsm_0/CS] [get_bd_pins chip_select_splitter_0/a]
+connect_bd_net [get_bd_pins chip_select_splitter_0/b] [get_bd_pins mx9_sdramfsm_0/CS]
+connect_bd_net [get_bd_pins data_splitter_0/d_out] [get_bd_pins mx9_sdramfsm_0/DQ]
+startgroup
+make_bd_pins_external  [get_bd_pins powerpcfsm_0/CLK]
+endgroup
+connect_bd_net [get_bd_ports CLK_0] [get_bd_pins mpc106fsm_0/CLK]
+connect_bd_net [get_bd_ports CLK_0] [get_bd_pins mx9_sdramfsm_0/CLK]
+save_bd_design
+make_wrapper -files [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}}] -top
+add_files -norecurse {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v}}
+connect_bd_net [get_bd_pins mpc106fsm_0/WE] [get_bd_pins mx9_sdramfsm_0/WE]
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v}}
+make_wrapper -files [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}}] -top
+add_files -norecurse {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/alexandra.chirita98/Downloads/test-hw.v
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+generate_target Simulation [get_files {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}]
+export_ip_user_files -of_objects [get_files {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}}] -directory {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files} -ipstatic_source_dir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/modelsim} {questa=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/questa} {riviera=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/riviera} {activehdl=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source test.tcl
+relaunch_sim
+open_bd_design {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}
+open_bd_design {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}

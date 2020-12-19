@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../HotCache.srcs/sources_1/new/ARM_CPU.v" \
+"../../../../HotCache.ip_user_files/bd/design_cache_arm_cpu/ip/design_cache_arm_cpu_ARM_CPU_0_0/sim/design_cache_arm_cpu_ARM_CPU_0_0.v" \
+"../../../../HotCache.ip_user_files/bd/design_cache_arm_cpu/ip/design_cache_arm_cpu_Data_Memory_0_0/sim/design_cache_arm_cpu_Data_Memory_0_0.v" \
+"../../../../HotCache.ip_user_files/bd/design_cache_arm_cpu/ip/design_cache_arm_cpu_IC_0_0/sim/design_cache_arm_cpu_IC_0_0.v" \
+"../../../../HotCache.ip_user_files/bd/design_cache_arm_cpu/sim/design_cache_arm_cpu.v" \
+"../../../../HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hdl/design_cache_arm_cpu_wrapper.v" \
+"../../../../HotCache.srcs/sim_1/new/CACHE_TEST.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

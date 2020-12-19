@@ -1,0 +1,4408 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 18 23:10:27 2020
+# Process ID: 7496
+# Current directory: C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10992 C:\Users\alexandra.chirita98\OneDrive - Universitatea Politehnica Bucuresti\SMP\HotCache\HotCache.xpr
+# Log file: C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/vivado.log
+# Journal file: C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 670.309 ; gain = 79.258
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new
+file mkdir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new}
+close [ open {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v} w ]
+add_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v}}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new
+file mkdir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new}
+close [ open {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v} w ]
+add_files -fileset sim_1 {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v}}
+update_compile_order -fileset sim_1
+set_property top CPU_TEST [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_TEST' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_TEST_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ARM_CPU
+INFO: [VRFC 10-2458] undeclared symbol MEMWB_mem2reg, assumed default net type wire [C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v:139]
+WARNING: [VRFC 10-3380] identifier 'PCSrc_wire' is used before its declaration [C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v:27]
+WARNING: [VRFC 10-3380] identifier 'jump_PC_wire' is used before its declaration [C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v:28]
+INFO: [VRFC 10-311] analyzing module ForwardingUnit
+INFO: [VRFC 10-311] analyzing module HazardDetection
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-311] analyzing module IDEX
+INFO: [VRFC 10-311] analyzing module EXMEM
+INFO: [VRFC 10-311] analyzing module MEMWB
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-311] analyzing module IC
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-311] analyzing module Control_Mux
+INFO: [VRFC 10-311] analyzing module Forward_ALU_Mux
+INFO: [VRFC 10-311] analyzing module ALU_Mux
+INFO: [VRFC 10-311] analyzing module ID_Mux
+INFO: [VRFC 10-311] analyzing module WB_Mux
+INFO: [VRFC 10-311] analyzing module Shift_Left
+INFO: [VRFC 10-311] analyzing module SignExtend
+INFO: [VRFC 10-311] analyzing module Branch
+INFO: [VRFC 10-311] analyzing module ARM_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_TEST
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 80224ce83d0e425894f3efc0a0287f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_TEST_behav xil_defaultlib.CPU_TEST xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.HazardDetection
+Compiling module xil_defaultlib.ARM_Control
+Compiling module xil_defaultlib.Control_Mux
+Compiling module xil_defaultlib.ID_Mux
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.SignExtend
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.Shift_Left
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ForwardingUnit
+Compiling module xil_defaultlib.Forward_ALU_Mux
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU_Mux
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB_Mux
+Compiling module xil_defaultlib.ARM_CPU
+Compiling module xil_defaultlib.IC
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.CPU_TEST
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CPU_TEST_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 736.504 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CPU_TEST_behav -key {Behavioral:sim_1:Functional:CPU_TEST} -tclbatch {CPU_TEST.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source CPU_TEST.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+$finish called at time : 30 ns : File "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v" Line 33
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CPU_TEST_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 760.637 ; gain = 24.133
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'CPU_TEST' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CPU_TEST_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 80224ce83d0e425894f3efc0a0287f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CPU_TEST_behav xil_defaultlib.CPU_TEST xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+$finish called at time : 30 ns : File "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v" Line 33
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 786.008 ; gain = 2.445
+create_bd_design "design_cache_arm_cpu"
+Wrote  : <C:\Users\alexandra.chirita98\OneDrive - Universitatea Politehnica Bucuresti\SMP\HotCache\HotCache.srcs\sources_1\bd\design_cache_arm_cpu\design_cache_arm_cpu.bd> 
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference ARM_CPU ARM_CPU_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RESET' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLOCK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'CLOCK': Added interface parameter 'ASSOCIATED_RESET' with value 'RESET'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLOCK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference Data_Memory Data_Memory_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference IC IC_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property location {1.5 374 142} [get_bd_cells IC_0]
+connect_bd_net [get_bd_pins IC_0/PC_in] [get_bd_pins ARM_CPU_0/PC]
+connect_bd_net [get_bd_pins IC_0/instruction_out] [get_bd_pins ARM_CPU_0/IC]
+connect_bd_net [get_bd_pins Data_Memory_0/outputData] [get_bd_pins ARM_CPU_0/mem_data_in]
+connect_bd_net [get_bd_pins Data_Memory_0/CONTROL_MemWrite] [get_bd_pins ARM_CPU_0/control_memwrite_out]
+connect_bd_net [get_bd_pins Data_Memory_0/CONTROL_MemRead] [get_bd_pins ARM_CPU_0/control_memread_out]
+connect_bd_net [get_bd_pins Data_Memory_0/inputData] [get_bd_pins Data_Memory_0/outputData]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins Data_Memory_0/inputData] [get_bd_pins Data_Memory_0/outputData]'
+connect_bd_net [get_bd_pins Data_Memory_0/inputAddress] [get_bd_pins ARM_CPU_0/mem_address_out]
+connect_bd_net [get_bd_pins Data_Memory_0/inputData] [get_bd_pins ARM_CPU_0/mem_data_out]
+startgroup
+make_bd_pins_external  [get_bd_pins ARM_CPU_0/RESET]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins ARM_CPU_0/CLOCK]
+endgroup
+make_wrapper -files [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}}] -top
+WARNING: [BD 41-927] Following properties on pin /ARM_CPU_0/CLOCK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_cache_arm_cpu_CLOCK_0 
+Wrote  : <C:\Users\alexandra.chirita98\OneDrive - Universitatea Politehnica Bucuresti\SMP\HotCache\HotCache.srcs\sources_1\bd\design_cache_arm_cpu\design_cache_arm_cpu.bd> 
+Wrote  : <C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/ui/bd_14f5b9c7.ui> 
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/synth/design_cache_arm_cpu.v
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/sim/design_cache_arm_cpu.v
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hdl/design_cache_arm_cpu_wrapper.v
+add_files -norecurse {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hdl/design_cache_arm_cpu_wrapper.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CPU_TEST.v}}
+set_property source_mgmt_mode DisplayOnly [current_project]
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v} w ]
+add_files -fileset sim_1 {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v}}
+set_property top CACHE_TEST [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+generate_target Simulation [get_files {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}]
+WARNING: [Vivado 12-818] No files matched 'C:/Users/alexandra.chirita98/OneDrive'
+WARNING: [Vivado 12-818] No files matched '-'
+WARNING: [Vivado 12-818] No files matched 'Universitatea'
+WARNING: [Vivado 12-818] No files matched 'Politehnica'
+WARNING: [Vivado 12-818] No files matched 'Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd'
+export_ip_user_files -of_objects [get_files {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}] -no_script -sync -force -quiet
+WARNING: [Vivado 12-818] No files matched 'C:/Users/alexandra.chirita98/OneDrive'
+WARNING: [Vivado 12-818] No files matched '-'
+WARNING: [Vivado 12-818] No files matched 'Universitatea'
+WARNING: [Vivado 12-818] No files matched 'Politehnica'
+WARNING: [Vivado 12-818] No files matched 'Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd'
+export_simulation -of_objects [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}}] -directory {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files} -ipstatic_source_dir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/modelsim} {questa=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/questa} {riviera=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/riviera} {activehdl=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [BD 41-1662] The design 'design_cache_arm_cpu.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/synth/design_cache_arm_cpu.v
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/sim/design_cache_arm_cpu.v
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hdl/design_cache_arm_cpu_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ARM_CPU_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Data_Memory_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block IC_0 .
+Exporting to file C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hw_handoff/design_cache_arm_cpu.hwh
+Generated Block Design Tcl file C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hw_handoff/design_cache_arm_cpu_bd.tcl
+Generated Hardware Definition File C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/synth/design_cache_arm_cpu.hwdef
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CACHE_TEST' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CACHE_TEST_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/bd/design_cache_arm_cpu/ip/design_cache_arm_cpu_ARM_CPU_0_0/sim/design_cache_arm_cpu_ARM_CPU_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_cache_arm_cpu_ARM_CPU_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/bd/design_cache_arm_cpu/ip/design_cache_arm_cpu_Data_Memory_0_0/sim/design_cache_arm_cpu_Data_Memory_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_cache_arm_cpu_Data_Memory_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/bd/design_cache_arm_cpu/ip/design_cache_arm_cpu_IC_0_0/sim/design_cache_arm_cpu_IC_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_cache_arm_cpu_IC_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/bd/design_cache_arm_cpu/sim/design_cache_arm_cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_cache_arm_cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hdl/design_cache_arm_cpu_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_cache_arm_cpu_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CACHE_TEST
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 80224ce83d0e425894f3efc0a0287f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CACHE_TEST_behav xil_defaultlib.CACHE_TEST xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.HazardDetection
+Compiling module xil_defaultlib.ARM_Control
+Compiling module xil_defaultlib.Control_Mux
+Compiling module xil_defaultlib.ID_Mux
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.SignExtend
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.Shift_Left
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ForwardingUnit
+Compiling module xil_defaultlib.Forward_ALU_Mux
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU_Mux
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB_Mux
+Compiling module xil_defaultlib.ARM_CPU
+Compiling module xil_defaultlib.design_cache_arm_cpu_ARM_CPU_0_0
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.design_cache_arm_cpu_Data_Memory...
+Compiling module xil_defaultlib.IC
+Compiling module xil_defaultlib.design_cache_arm_cpu_IC_0_0
+Compiling module xil_defaultlib.design_cache_arm_cpu
+Compiling module xil_defaultlib.CACHE_TEST
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CACHE_TEST_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CACHE_TEST_behav -key {Behavioral:sim_1:Functional:CACHE_TEST} -tclbatch {CACHE_TEST.tcl} -protoinst "protoinst_files/design_cache_arm_cpu.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_cache_arm_cpu.protoinst
+Time resolution is 1 ps
+source CACHE_TEST.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+$finish called at time : 30 ns : File "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v" Line 20
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CACHE_TEST_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1009.891 ; gain = 49.117
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'CACHE_TEST' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj CACHE_TEST_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 80224ce83d0e425894f3efc0a0287f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CACHE_TEST_behav xil_defaultlib.CACHE_TEST xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_cache_arm_cpu.protoinst
+Time resolution is 1 ps
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 0
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 9
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 10
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 11
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 45
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 12
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 50
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 55
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 60
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+RAM[0] = 0
+RAM[1] = 5
+RAM[2] = 10
+RAM[3] = 15
+RAM[4] = 20
+RAM[5] = 25
+RAM[6] = 30
+RAM[7] = 35
+RAM[8] = 40
+RAM[9] = 30
+RAM[10] = 31
+RAM[11] = 24
+RAM[12] = 1
+RAM[13] = 65
+RAM[14] = 70
+RAM[15] = 75
+RAM[16] = 80
+RAM[17] = 85
+RAM[18] = 90
+RAM[19] = 95
+RAM[20] = 100
+RAM[21] = 105
+RAM[22] = 110
+RAM[23] = 115
+RAM[24] = 120
+RAM[25] = 125
+RAM[26] = 130
+RAM[27] = 135
+RAM[28] = 140
+RAM[29] = 145
+RAM[30] = 150
+RAM[31] = 155
+REGISTER[0] = 25
+REGISTER[1] = 1
+REGISTER[2] = 2
+REGISTER[3] = 3
+REGISTER[4] = 4
+REGISTER[5] = 5
+REGISTER[6] = 6
+REGISTER[7] = 7
+REGISTER[8] = 8
+REGISTER[9] = 30
+REGISTER[10] = 31
+REGISTER[11] = 24
+REGISTER[12] = 1
+REGISTER[13] = 13
+REGISTER[14] = 14
+REGISTER[15] = 15
+REGISTER[16] = 16
+REGISTER[17] = 17
+REGISTER[18] = 18
+REGISTER[19] = 19
+REGISTER[20] = 20
+REGISTER[21] = 21
+REGISTER[22] = 22
+REGISTER[23] = 23
+REGISTER[24] = 24
+REGISTER[25] = 25
+REGISTER[26] = 26
+REGISTER[27] = 27
+REGISTER[28] = 28
+REGISTER[29] = 29
+REGISTER[30] = 30
+REGISTER[31] = 0
+$finish called at time : 30 ns : File "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v" Line 20
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1101.812 ; gain = 44.102
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hdl/design_cache_arm_cpu_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/hdl/design_cache_arm_cpu_wrapper.v}}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/new/ARM_CPU.v}}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/design_cache_arm_cpu/design_cache_arm_cpu.bd}}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sim_1/new/CACHE_TEST.v}}
+create_bd_design "cache_cpu_design"
+Wrote  : <C:\Users\alexandra.chirita98\OneDrive - Universitatea Politehnica Bucuresti\SMP\HotCache\HotCache.srcs\sources_1\bd\cache_cpu_design\cache_cpu_design.bd> 
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_proc_ss:2.0 v_proc_ss_0
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'S00_HAS_DATA_FIFO' from '2' to '0' has been ignored for IP 'v_proc_ss_0/inst/axi_interconnect_1'
+WARNING: [BD 41-1306] The connection to interface pin /reset_sel_axi_mm/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1306] The connection to interface pin /reset_sel_axi_mm/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /axi_interconnect_1/ARESETN(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /axi_interconnect_1/M00_ARESETN(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /axi_interconnect_1/S02_ARESETN(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /axi_interconnect_1/S00_ARESETN(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /axi_interconnect_1/S01_ARESETN(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /vdma_trunc/aresetn(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /vdma_pad/aresetn(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /video_router/M03_AXIS_ARESETN(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /video_router/S03_AXIS_ARESETN(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /video_router/S09_AXIS_ARESETN(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /dint/ap_rst_n(rst)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /reset_sel_axi_mm/gpio_io_o(undef) and /deint_cc/m_axis_aresetn(rst)
+WARNING: [BD 41-1306] The connection to interface pin /reset_sel_axis/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1306] The connection to interface pin /reset_sel_axis/gpio_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1306] The connection to interface pin /deint_ss/m_axis_tuser is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /deint_cc/s_axis_tuser is being overridden by the user. This pin will not be connected as a part of interface connection S_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /deint_cc/m_axis_tuser is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS
+WARNING: [BD 41-1306] The connection to interface pin /dint/s_axis_video_TUSER is being overridden by the user. This pin will not be connected as a part of interface connection s_axis_video
+</axi_vdma/S_AXI_LITE/Reg> is being mapped into </s_axi_ctrl> at <0x00000000 [ 64K ]>
+</csc/s_axi_CTRL/Reg> is being mapped into </s_axi_ctrl> at <0x00010000 [ 64K ]>
+</dint/s_axi_CTRL/Reg> is being mapped into </s_axi_ctrl> at <0x00020000 [ 64K ]>
+</hcr/s_axi_CTRL/Reg> is being mapped into </s_axi_ctrl> at <0x00030000 [ 64K ]>
+</hsc/s_axi_CTRL/Reg> is being mapped into </s_axi_ctrl> at <0x00040000 [ 64K ]>
+</ltr/s_axi_CTRL/Reg> is being mapped into </s_axi_ctrl> at <0x00050000 [ 64K ]>
+</reset_sel_axi_mm/S_AXI/Reg> is being mapped into </s_axi_ctrl> at <0x00060000 [ 64K ]>
+</reset_sel_axis/S_AXI/Reg> is being mapped into </s_axi_ctrl> at <0x00070000 [ 64K ]>
+</vcr_i/s_axi_CTRL/Reg> is being mapped into </s_axi_ctrl> at <0x00080000 [ 64K ]>
+</vcr_o/s_axi_CTRL/Reg> is being mapped into </s_axi_ctrl> at <0x00090000 [ 64K ]>
+</video_router/xbar/S_AXI_CTRL/Reg> is being mapped into </s_axi_ctrl> at <0x000A0000 [ 64K ]>
+</vsc/s_axi_CTRL/Reg> is being mapped into </s_axi_ctrl> at <0x000B0000 [ 64K ]>
+create_bd_cell: Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 1124.441 ; gain = 5.094
+endgroup
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+delete_bd_objs [get_bd_cells v_proc_ss_0]
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+add_files -norecurse {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/MC68000.V} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/DECODER.V} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/powerpcfsm.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/graphic_controller.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/mpc106fsm.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/Sram.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/core_logic.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/2mx9_sdramfsm.v}}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/powerpcfsm.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/mpc106fsm.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/2mx9_sdramfsm.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/powerpcfsm.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/mpc106fsm.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/2mx9_sdramfsm.v}}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+create_bd_design "cache_cpu_design"
+Wrote  : <C:\Users\alexandra.chirita98\OneDrive - Universitatea Politehnica Bucuresti\SMP\HotCache\HotCache.srcs\sources_1\bd\cache_cpu_design\cache_cpu_design.bd> 
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/graphic_controller.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/DECODER.V}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/core_logic.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/MC68000.V}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/Sram.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/graphic_controller.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/DECODER.V} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/core_logic.v} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/MC68000.V} {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/Sram.v}}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+add_files -norecurse {C:/Users/alexandra.chirita98/Downloads/mpc106fsm-hw.v C:/Users/alexandra.chirita98/Downloads/data_splitter-hw.v C:/Users/alexandra.chirita98/Downloads/2mx9_sdramfsm-hw.v C:/Users/alexandra.chirita98/Downloads/powerpcfsm-hw.v C:/Users/alexandra.chirita98/Downloads/chip_select_splitter-hw.v}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+set_property source_mgmt_mode All [current_project]
+startgroup
+create_bd_cell -type module -reference chip_select_splitter chip_select_splitter_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference data_splitter data_splitter_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference mpc106fsm mpc106fsm_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference mx9_sdramfsm mx9_sdramfsm_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference powerpcfsm powerpcfsm_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+endgroup
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+open_bd_design {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins mpc106fsm_0/CLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins mx9_sdramfsm_0/CLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins powerpcfsm_0/CLK]
+endgroup
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins powerpcfsm_0/CLK]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins mx9_sdramfsm_0/CLK]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins mpc106fsm_0/CLK]'
+INFO: [Common 17-17] undo 'startgroup'
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+set_property location {5.5 1216 449} [get_bd_cells mx9_sdramfsm_0]
+set_property location {1.5 363 442} [get_bd_cells mpc106fsm_0]
+set_property location {2 357 447} [get_bd_cells mpc106fsm_0]
+set_property location {2.5 621 451} [get_bd_cells data_splitter_0]
+set_property location {3 712 352} [get_bd_cells chip_select_splitter_0]
+set_property location {3.5 829 421} [get_bd_cells mx9_sdramfsm_0]
+connect_bd_net [get_bd_pins powerpcfsm_0/A] [get_bd_pins mpc106fsm_0/A]
+connect_bd_net [get_bd_pins powerpcfsm_0/BR] [get_bd_pins mpc106fsm_0/BR0]
+connect_bd_net [get_bd_pins powerpcfsm_0/BR] [get_bd_pins mpc106fsm_0/DH]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins powerpcfsm_0/BR] [get_bd_pins mpc106fsm_0/DH]'
+connect_bd_net [get_bd_pins powerpcfsm_0/BR] [get_bd_pins mpc106fsm_0/DH]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins powerpcfsm_0/BR] [get_bd_pins mpc106fsm_0/DH]'
+connect_bd_net [get_bd_pins powerpcfsm_0/DH] [get_bd_pins mpc106fsm_0/DH]
+connect_bd_net [get_bd_pins data_splitter_0/d_in] [get_bd_pins powerpcfsm_0/DH]
+connect_bd_net [get_bd_pins powerpcfsm_0/DL] [get_bd_pins mpc106fsm_0/DL]
+connect_bd_net [get_bd_pins powerpcfsm_0/TBST] [get_bd_pins mpc106fsm_0/TS]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins powerpcfsm_0/TBST] [get_bd_pins mpc106fsm_0/TS]'
+connect_bd_net [get_bd_pins powerpcfsm_0/TBST] [get_bd_pins mpc106fsm_0/TBST]
+connect_bd_net [get_bd_pins powerpcfsm_0/TS] [get_bd_pins mpc106fsm_0/TS]
+connect_bd_net [get_bd_pins powerpcfsm_0/TSIZ] [get_bd_pins mpc106fsm_0/TSIZ]
+connect_bd_net [get_bd_pins powerpcfsm_0/WT] [get_bd_pins mpc106fsm_0/WT]
+save_bd_design
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+Wrote  : <C:\Users\alexandra.chirita98\OneDrive - Universitatea Politehnica Bucuresti\SMP\HotCache\HotCache.srcs\sources_1\bd\cache_cpu_design\cache_cpu_design.bd> 
+Wrote  : <C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/ui/bd_e80474f2.ui> 
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+connect_bd_net [get_bd_pins powerpcfsm_0/AACK] [get_bd_pins mpc106fsm_0/AACK]
+connect_bd_net [get_bd_pins powerpcfsm_0/ARTRY] [get_bd_pins mpc106fsm_0/ARTRY]
+connect_bd_net [get_bd_pins powerpcfsm_0/BG] [get_bd_pins mpc106fsm_0/BG0]
+connect_bd_net [get_bd_pins powerpcfsm_0/DBG] [get_bd_pins mpc106fsm_0/DBG0]
+connect_bd_net [get_bd_pins powerpcfsm_0/TA] [get_bd_pins mpc106fsm_0/TA]
+connect_bd_net [get_bd_pins powerpcfsm_0/TT] [get_bd_pins mpc106fsm_0/TT]
+connect_bd_net [get_bd_pins mpc106fsm_0/SDMA] [get_bd_pins mx9_sdramfsm_0/A]
+connect_bd_net [get_bd_pins mpc106fsm_0/SDCAS] [get_bd_pins mx9_sdramfsm_0/CAS]
+connect_bd_net [get_bd_pins mpc106fsm_0/SDRAS] [get_bd_pins mx9_sdramfsm_0/RAS]
+connect_bd_net [get_bd_pins mpc106fsm_0/CS] [get_bd_pins chip_select_splitter_0/a]
+connect_bd_net [get_bd_pins chip_select_splitter_0/b] [get_bd_pins mx9_sdramfsm_0/CS]
+connect_bd_net [get_bd_pins data_splitter_0/d_out] [get_bd_pins mx9_sdramfsm_0/DQ]
+startgroup
+make_bd_pins_external  [get_bd_pins powerpcfsm_0/CLK]
+endgroup
+connect_bd_net [get_bd_ports CLK_0] [get_bd_pins mpc106fsm_0/CLK]
+connect_bd_net [get_bd_ports CLK_0] [get_bd_pins mx9_sdramfsm_0/CLK]
+save_bd_design
+WARNING: [BD 41-597] NET <Net> has no source
+Wrote  : <C:\Users\alexandra.chirita98\OneDrive - Universitatea Politehnica Bucuresti\SMP\HotCache\HotCache.srcs\sources_1\bd\cache_cpu_design\cache_cpu_design.bd> 
+Wrote  : <C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/ui/bd_e80474f2.ui> 
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+make_wrapper -files [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}}] -top
+WARNING: [BD 41-927] Following properties on pin /mpc106fsm_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=cache_cpu_design_CLK_0 
+WARNING: [BD 41-927] Following properties on pin /mx9_sdramfsm_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=cache_cpu_design_CLK_0 
+WARNING: [BD 41-927] Following properties on pin /powerpcfsm_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=cache_cpu_design_CLK_0 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/mx9_sdramfsm_0/WE
+
+WARNING: [BD 41-597] NET <Net> has no source
+Wrote  : <C:\Users\alexandra.chirita98\OneDrive - Universitatea Politehnica Bucuresti\SMP\HotCache\HotCache.srcs\sources_1\bd\cache_cpu_design\cache_cpu_design.bd> 
+WARNING: [BD 41-166] The net:Net is not connected to a valid source.
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/synth/cache_cpu_design.v
+WARNING: [BD 41-166] The net:Net is not connected to a valid source.
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/sim/cache_cpu_design.v
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v
+add_files -norecurse {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v}}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+connect_bd_net [get_bd_pins mpc106fsm_0/WE] [get_bd_pins mx9_sdramfsm_0/WE]
+export_ip_user_files -of_objects  [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v}}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+make_wrapper -files [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}}] -top
+WARNING: [BD 41-927] Following properties on pin /mpc106fsm_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=cache_cpu_design_CLK_0 
+WARNING: [BD 41-927] Following properties on pin /mx9_sdramfsm_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=cache_cpu_design_CLK_0 
+WARNING: [BD 41-927] Following properties on pin /powerpcfsm_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=cache_cpu_design_CLK_0 
+WARNING: [BD 41-597] NET <Net> has no source
+Wrote  : <C:\Users\alexandra.chirita98\OneDrive - Universitatea Politehnica Bucuresti\SMP\HotCache\HotCache.srcs\sources_1\bd\cache_cpu_design\cache_cpu_design.bd> 
+Wrote  : <C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/ui/bd_e80474f2.ui> 
+WARNING: [BD 41-166] The net:Net is not connected to a valid source.
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/synth/cache_cpu_design.v
+WARNING: [BD 41-166] The net:Net is not connected to a valid source.
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/sim/cache_cpu_design.v
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v
+add_files -norecurse {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v}}
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+CRITICAL WARNING: [filemgmt 56-176] Module references are not supported in manual compile order mode and will be ignored.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/alexandra.chirita98/Downloads/test-hw.v
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+generate_target Simulation [get_files {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}]
+WARNING: [Vivado 12-818] No files matched 'C:/Users/alexandra.chirita98/OneDrive'
+WARNING: [Vivado 12-818] No files matched '-'
+WARNING: [Vivado 12-818] No files matched 'Universitatea'
+WARNING: [Vivado 12-818] No files matched 'Politehnica'
+WARNING: [Vivado 12-818] No files matched 'Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd'
+export_ip_user_files -of_objects [get_files {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}] -no_script -sync -force -quiet
+WARNING: [Vivado 12-818] No files matched 'C:/Users/alexandra.chirita98/OneDrive'
+WARNING: [Vivado 12-818] No files matched '-'
+WARNING: [Vivado 12-818] No files matched 'Universitatea'
+WARNING: [Vivado 12-818] No files matched 'Politehnica'
+WARNING: [Vivado 12-818] No files matched 'Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd'
+export_simulation -of_objects [get_files {{C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}}] -directory {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files} -ipstatic_source_dir {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/modelsim} {questa=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/questa} {riviera=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/riviera} {activehdl=C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [BD 41-1662] The design 'cache_cpu_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-166] The net:Net is not connected to a valid source.
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/synth/cache_cpu_design.v
+WARNING: [BD 41-166] The net:Net is not connected to a valid source.
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/sim/cache_cpu_design.v
+VHDL Output written to : C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block chip_select_splitter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block data_splitter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mpc106fsm_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mx9_sdramfsm_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block powerpcfsm_0 .
+Exporting to file C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hw_handoff/cache_cpu_design.hwh
+Generated Block Design Tcl file C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hw_handoff/cache_cpu_design_bd.tcl
+Generated Hardware Definition File C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/synth/cache_cpu_design.hwdef
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/bd/cache_cpu_design/ip/cache_cpu_design_chip_select_splitter_0_0/sim/cache_cpu_design_chip_select_splitter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_cpu_design_chip_select_splitter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/bd/cache_cpu_design/ip/cache_cpu_design_data_splitter_0_0/sim/cache_cpu_design_data_splitter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_cpu_design_data_splitter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/bd/cache_cpu_design/ip/cache_cpu_design_mpc106fsm_0_0/sim/cache_cpu_design_mpc106fsm_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_cpu_design_mpc106fsm_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/bd/cache_cpu_design/ip/cache_cpu_design_mx9_sdramfsm_0_0/sim/cache_cpu_design_mx9_sdramfsm_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_cpu_design_mx9_sdramfsm_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/bd/cache_cpu_design/ip/cache_cpu_design_powerpcfsm_0_0/sim/cache_cpu_design_powerpcfsm_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_cpu_design_powerpcfsm_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.ip_user_files/bd/cache_cpu_design/sim/cache_cpu_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_cpu_design
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/Downloads/2mx9_sdramfsm-hw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mx9_sdramfsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/Downloads/chip_select_splitter-hw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chip_select_splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/Downloads/data_splitter-hw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/Downloads/mpc106fsm-hw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mpc106fsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/Downloads/powerpcfsm-hw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module powerpcfsm
+WARNING: [VRFC 10-3507] macro 'S1' redefined [C:/Users/alexandra.chirita98/Downloads/powerpcfsm-hw.v:54]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/hdl/cache_cpu_design_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_cpu_design_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/alexandra.chirita98/Downloads/test-hw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 80224ce83d0e425894f3efc0a0287f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.chip_select_splitter
+Compiling module xil_defaultlib.cache_cpu_design_chip_select_spl...
+Compiling module xil_defaultlib.data_splitter
+Compiling module xil_defaultlib.cache_cpu_design_data_splitter_0...
+Compiling module xil_defaultlib.mpc106fsm
+Compiling module xil_defaultlib.cache_cpu_design_mpc106fsm_0_0
+Compiling module xil_defaultlib.mx9_sdramfsm
+Compiling module xil_defaultlib.cache_cpu_design_mx9_sdramfsm_0_...
+Compiling module xil_defaultlib.powerpcfsm
+Compiling module xil_defaultlib.cache_cpu_design_powerpcfsm_0_0
+Compiling module xil_defaultlib.cache_cpu_design
+Compiling module xil_defaultlib.cache_cpu_design_wrapper
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav
+ERROR: [Common 17-165] Too many positional options when parsing '-notrace', please type 'webtalk -help' for usage info.
+
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_behav -key {Behavioral:sim_1:Functional:test} -tclbatch {test.tcl} -protoinst "protoinst_files/cache_cpu_design.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/cache_cpu_design.protoinst
+Time resolution is 1 ps
+source test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1381.457 ; gain = 42.961
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 80224ce83d0e425894f3efc0a0287f13 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/cache_cpu_design.protoinst
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1434.461 ; gain = 0.402
+open_bd_design {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}
+open_bd_design {C:/Users/alexandra.chirita98/OneDrive - Universitatea Politehnica Bucuresti/SMP/HotCache/HotCache.srcs/sources_1/bd/cache_cpu_design/cache_cpu_design.bd}
