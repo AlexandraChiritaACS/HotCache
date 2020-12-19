@@ -1,9 +1,4 @@
 
-// File        : C:\MicroSys\Lab3_SM\PowerPCInterf\lab3M\compile\mpc106fsm.v
-// Generated   : 03/16/05 14:06:25
-// From        : C:\MicroSys\Lab3_SM\PowerPCInterf\lab3M\src\mpc106fsm.asf
-// By          : FSM2VHDL ver. 3.0.4.1
-
 `timescale 1ns / 1ps
 
 module mpc106fsm (AACK, ARTRY, A, BG0, BR0, CLK, CS, DBG0, DH, DL, SDCAS, SDMA, SDRAS, TA, TBST, TS, TSIZ, TT, WE, WT);
