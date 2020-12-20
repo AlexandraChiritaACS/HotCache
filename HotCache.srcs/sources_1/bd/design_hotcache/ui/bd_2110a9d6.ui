@@ -1,0 +1,54 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "PinnedPorts":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port CLK_0 -pg 1 -y 20 -defaultsOSRD
+preplace inst C_2 -pg 1 -lvl 3 -y -30 -defaultsOSRD
+preplace inst C_3 -pg 1 -lvl 4 -y -30 -defaultsOSRD
+preplace inst chip_select_splitter_0 -pg 1 -lvl 3 -y 90 -defaultsOSRD
+preplace inst powerpcfsm_0 -pg 1 -lvl 1 -y 10 -defaultsOSRD
+preplace inst data_splitter_0 -pg 1 -lvl 3 -y 190 -defaultsOSRD
+preplace inst mpc106fsm_0 -pg 1 -lvl 2 -y 10 -defaultsOSRD
+preplace inst validity_block_0 -pg 1 -lvl 5 -y 100 -defaultsOSRD
+preplace inst hcm_0 -pg 1 -lvl 5 -y 280 -defaultsOSRD
+preplace inst mux_block_0 -pg 1 -lvl 5 -y -70 -defaultsOSRD
+preplace inst C_0 -pg 1 -lvl 3 -y -130 -defaultsOSRD
+preplace inst C_1 -pg 1 -lvl 4 -y -130 -defaultsOSRD
+preplace inst mx9_sdramfsm_0 -pg 1 -lvl 6 -y 20 -defaultsOSRD
+preplace netloc mpc106fsm_0_CS 1 2 1 -150
+preplace netloc mpc106fsm_0_TA 1 0 3 -710 180 NJ 180 -190
+preplace netloc powerpcfsm_0_TS 1 1 1 -480
+preplace netloc powerpcfsm_0_TBST 1 1 1 -470
+preplace netloc mpc106fsm_0_DBG0 1 0 3 -720 -160 NJ -160 -190
+preplace netloc mpc106fsm_0_ARTRY 1 0 3 -740 -190 NJ -190 -170
+preplace netloc data_splitter_0_d_out 1 3 3 NJ 190 370J -180 770
+preplace netloc powerpcfsm_0_BR 1 1 1 N
+preplace netloc mpc106fsm_0_BG0 1 0 3 -730 -170 NJ -170 -180
+preplace netloc mux_block_0_C0 1 2 4 -120 -250 NJ -250 NJ -250 750
+preplace netloc C_2_val 1 3 2 140J -200 400
+preplace netloc mux_block_0_C1 1 3 3 160 -240 NJ -240 740
+preplace netloc powerpcfsm_0_DH 1 1 2 -450 -150 -140
+preplace netloc mux_block_0_C2 1 2 4 -110 -230 NJ -230 NJ -230 730
+preplace netloc chip_select_splitter_0_b 1 3 3 NJ 90 340J 370 820
+preplace netloc mpc106fsm_0_WE 1 2 4 -170J 250 NJ 250 390J -170 780
+preplace netloc mux_block_0_C3 1 3 3 170 -210 NJ -210 720
+preplace netloc C_0_val 1 3 2 150J -190 340
+preplace netloc mpc106fsm_0_AACK 1 0 3 -710 -180 NJ -180 -200
+preplace netloc mpc106fsm_0_SDRAS 1 2 4 -130J -260 NJ -260 NJ -260 810
+preplace netloc powerpcfsm_0_WT 1 1 1 N
+preplace netloc powerpcfsm_0_DL 1 1 1 -460
+preplace netloc CLK_0_1 1 0 6 -740 150 -440 260 N 260 150 180 350 -190 800
+preplace netloc mpc106fsm_0_SDCAS 1 2 4 -160J -270 NJ -270 NJ -270 820
+preplace netloc Net 1 1 2 -490J 170 -200
+preplace netloc powerpcfsm_0_A 1 1 1 N
+preplace netloc hcm_0_mux_out 1 4 2 420 -220 760
+preplace netloc mpc106fsm_0_SDMA 1 2 4 NJ 30 NJ 30 410J -160 790
+preplace netloc validity_block_0_mux 1 4 2 430 -200 710
+preplace netloc C_3_val 1 4 1 360
+preplace netloc C_1_val 1 4 1 380
+levelinfo -pg 1 -760 -600 -320 20 260 570 920 1020 -top -390 -bot 380
+"
+}
+0

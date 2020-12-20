@@ -1,0 +1,3 @@
+design_hotcache_only_hcm_0_0.v,verilog,xil_defaultlib,../../../bd/design_hotcache_only/ip/design_hotcache_only_hcm_0_0/sim/design_hotcache_only_hcm_0_0.v,
+design_hotcache_only.v,verilog,xil_defaultlib,../../../bd/design_hotcache_only/sim/design_hotcache_only.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

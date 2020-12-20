@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_hotcache_only": {
+			"proto_instances": {
+			}
+		}
+	}
+}

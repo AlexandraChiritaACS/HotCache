@@ -1,0 +1,153 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA7DA7F9F24FF7B1C",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_hotcache_only",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "hcm_0": ""
+    },
+    "ports": {
+      "CLK_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_hotcache_only_CLK_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "WE": {
+        "direction": "I"
+      },
+      "address": {
+        "direction": "I",
+        "left": "0",
+        "right": "11"
+      },
+      "mux_in": {
+        "direction": "I",
+        "left": "0",
+        "right": "3"
+      },
+      "value": {
+        "direction": "IO",
+        "left": "0",
+        "right": "7"
+      },
+      "mux_out": {
+        "direction": "O",
+        "left": "0",
+        "right": "3"
+      }
+    },
+    "components": {
+      "hcm_0": {
+        "vlnv": "xilinx.com:module_ref:hcm:1.0",
+        "xci_name": "design_hotcache_only_hcm_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "hcm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "WE": {
+            "direction": "I"
+          },
+          "address": {
+            "direction": "I",
+            "left": "0",
+            "right": "11"
+          },
+          "value": {
+            "direction": "IO",
+            "left": "0",
+            "right": "7"
+          },
+          "mux_in": {
+            "direction": "I",
+            "left": "0",
+            "right": "3"
+          },
+          "mux_out": {
+            "direction": "O",
+            "left": "0",
+            "right": "3"
+          },
+          "CLK_0": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_hotcache_only_CLK_0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          }
+        }
+      }
+    },
+    "nets": {
+      "CLK_0_1": {
+        "ports": [
+          "CLK_0",
+          "hcm_0/CLK_0"
+        ]
+      },
+      "WE_1": {
+        "ports": [
+          "WE",
+          "hcm_0/WE"
+        ]
+      },
+      "address_1": {
+        "ports": [
+          "address",
+          "hcm_0/address"
+        ]
+      },
+      "mux_in_1": {
+        "ports": [
+          "mux_in",
+          "hcm_0/mux_in"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "value",
+          "hcm_0/value"
+        ]
+      },
+      "hcm_0_mux_out": {
+        "ports": [
+          "hcm_0/mux_out",
+          "mux_out"
+        ]
+      }
+    }
+  }
+}

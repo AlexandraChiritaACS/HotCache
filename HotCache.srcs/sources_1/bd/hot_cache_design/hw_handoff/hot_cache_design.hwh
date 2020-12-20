@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Dec 20 11:09:29 2020" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="hot_cache_design" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="500000000" DIR="I" NAME="CLK_0" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="powerpcfsm_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="mux_block_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="validity_block_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="hcm_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="mx9_sdramfsm_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="mpc106fsm_0" PORT="CLK"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/C_0" HWVERSION="1.0" INSTANCE="C_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="C" VLNV="xilinx.com:module_ref:C:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_C_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="E" SIGIS="undef" SIGNAME="mux_block_0_C0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_block_0" PORT="C0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="val" SIGIS="undef" SIGNAME="C_0_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="validity_block_0" PORT="C0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/C_1" HWVERSION="1.0" INSTANCE="C_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="C" VLNV="xilinx.com:module_ref:C:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_C_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="E" SIGIS="undef" SIGNAME="mux_block_0_C1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_block_0" PORT="C1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="val" SIGIS="undef" SIGNAME="C_1_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="validity_block_0" PORT="C1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/C_2" HWVERSION="1.0" INSTANCE="C_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="C" VLNV="xilinx.com:module_ref:C:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_C_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="E" SIGIS="undef" SIGNAME="mux_block_0_C2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_block_0" PORT="C2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="val" SIGIS="undef" SIGNAME="C_2_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="validity_block_0" PORT="C2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/C_3" HWVERSION="1.0" INSTANCE="C_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="C" VLNV="xilinx.com:module_ref:C:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_C_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="E" SIGIS="undef" SIGNAME="mux_block_0_C3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_block_0" PORT="C3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="val" SIGIS="undef" SIGNAME="C_3_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="validity_block_0" PORT="C3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/chip_select_splitter_0" HWVERSION="1.0" INSTANCE="chip_select_splitter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="chip_select_splitter" VLNV="xilinx.com:module_ref:chip_select_splitter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_chip_select_splitter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="a" RIGHT="7" SIGIS="undef" SIGNAME="mpc106fsm_0_CS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="CS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="chip_select_splitter_0_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mx9_sdramfsm_0" PORT="CS"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/data_splitter_0" HWVERSION="1.0" INSTANCE="data_splitter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="data_splitter" VLNV="xilinx.com:module_ref:data_splitter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_data_splitter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="d_in" RIGHT="31" SIGIS="undef" SIGNAME="powerpcfsm_0_DH">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="DH"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="d_out" RIGHT="7" SIGIS="undef" SIGNAME="data_splitter_0_d_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mx9_sdramfsm_0" PORT="DQ"/>
+            <CONNECTION INSTANCE="hcm_0" PORT="value"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/hcm_0" HWVERSION="1.0" INSTANCE="hcm_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hcm" VLNV="xilinx.com:module_ref:hcm:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BLOCKSIZE" VALUE="4"/>
+        <PARAMETER NAME="BLOCKNUM" VALUE="4"/>
+        <PARAMETER NAME="BITS" VALUE="8"/>
+        <PARAMETER NAME="ADDR" VALUE="12"/>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_hcm_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="WE" SIGIS="undef" SIGNAME="mpc106fsm_0_WE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="WE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="address" RIGHT="11" SIGIS="undef" SIGNAME="mpc106fsm_0_SDMA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="SDMA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="0" NAME="value" RIGHT="7" SIGIS="undef" SIGNAME="data_splitter_0_d_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_splitter_0" PORT="d_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="mux_in" RIGHT="3" SIGIS="undef" SIGNAME="validity_block_0_mux">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="validity_block_0" PORT="mux"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="mux_out" RIGHT="3" SIGIS="undef" SIGNAME="hcm_0_mux_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_block_0" PORT="mux"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="500000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/mpc106fsm_0" HWVERSION="1.0" INSTANCE="mpc106fsm_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mpc106fsm" VLNV="xilinx.com:module_ref:mpc106fsm:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_mpc106fsm_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="AACK" SIGIS="undef" SIGNAME="mpc106fsm_0_AACK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="AACK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ARTRY" SIGIS="undef" SIGNAME="mpc106fsm_0_ARTRY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="ARTRY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="A" RIGHT="31" SIGIS="undef" SIGNAME="powerpcfsm_0_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BG0" SIGIS="undef" SIGNAME="mpc106fsm_0_BG0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="BG"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BR0" SIGIS="undef" SIGNAME="powerpcfsm_0_BR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="BR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="500000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="CS" RIGHT="7" SIGIS="undef" SIGNAME="mpc106fsm_0_CS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="chip_select_splitter_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DBG0" SIGIS="undef" SIGNAME="mpc106fsm_0_DBG0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="DBG"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="DH" RIGHT="31" SIGIS="undef" SIGNAME="powerpcfsm_0_DH">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="DH"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="DL" RIGHT="31" SIGIS="undef" SIGNAME="powerpcfsm_0_DL">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="DL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SDCAS" SIGIS="undef" SIGNAME="mpc106fsm_0_SDCAS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mx9_sdramfsm_0" PORT="CAS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="SDMA" RIGHT="11" SIGIS="undef" SIGNAME="mpc106fsm_0_SDMA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mx9_sdramfsm_0" PORT="A"/>
+            <CONNECTION INSTANCE="hcm_0" PORT="address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SDRAS" SIGIS="undef" SIGNAME="mpc106fsm_0_SDRAS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mx9_sdramfsm_0" PORT="RAS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TA" SIGIS="undef" SIGNAME="mpc106fsm_0_TA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="TA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="TBST" SIGIS="undef" SIGNAME="powerpcfsm_0_TBST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="TBST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="TS" SIGIS="undef" SIGNAME="powerpcfsm_0_TS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="TS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="TSIZ" RIGHT="2" SIGIS="undef" SIGNAME="powerpcfsm_0_TSIZ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="TSIZ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="0" NAME="TT" RIGHT="4" SIGIS="undef"/>
+        <PORT DIR="O" NAME="WE" SIGIS="undef" SIGNAME="mpc106fsm_0_WE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mx9_sdramfsm_0" PORT="WE"/>
+            <CONNECTION INSTANCE="hcm_0" PORT="WE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WT" SIGIS="undef" SIGNAME="powerpcfsm_0_WT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="powerpcfsm_0" PORT="WT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/mux_block_0" HWVERSION="1.0" INSTANCE="mux_block_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux_block" VLNV="xilinx.com:module_ref:mux_block:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BLOCKNUM" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_mux_block_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="mux" RIGHT="3" SIGIS="undef" SIGNAME="hcm_0_mux_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="mux_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C0" SIGIS="undef" SIGNAME="mux_block_0_C0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_0" PORT="E"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C1" SIGIS="undef" SIGNAME="mux_block_0_C1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_1" PORT="E"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C2" SIGIS="undef" SIGNAME="mux_block_0_C2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_2" PORT="E"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C3" SIGIS="undef" SIGNAME="mux_block_0_C3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_3" PORT="E"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="500000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/mx9_sdramfsm_0" HWVERSION="1.0" INSTANCE="mx9_sdramfsm_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mx9_sdramfsm" VLNV="xilinx.com:module_ref:mx9_sdramfsm:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_mx9_sdramfsm_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="A" RIGHT="11" SIGIS="undef" SIGNAME="mpc106fsm_0_SDMA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="SDMA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CAS" SIGIS="undef" SIGNAME="mpc106fsm_0_SDCAS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="SDCAS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="500000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CS" SIGIS="undef" SIGNAME="chip_select_splitter_0_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="chip_select_splitter_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="DQ" RIGHT="7" SIGIS="undef" SIGNAME="data_splitter_0_d_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="data_splitter_0" PORT="d_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RAS" SIGIS="undef" SIGNAME="mpc106fsm_0_SDRAS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="SDRAS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WE" SIGIS="undef" SIGNAME="mpc106fsm_0_WE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="WE"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/powerpcfsm_0" HWVERSION="1.0" INSTANCE="powerpcfsm_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="powerpcfsm" VLNV="xilinx.com:module_ref:powerpcfsm:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_powerpcfsm_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="AACK" SIGIS="undef" SIGNAME="mpc106fsm_0_AACK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="AACK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ARTRY" SIGIS="undef" SIGNAME="mpc106fsm_0_ARTRY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="ARTRY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="A" RIGHT="31" SIGIS="undef" SIGNAME="powerpcfsm_0_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BG" SIGIS="undef" SIGNAME="mpc106fsm_0_BG0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="BG0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BR" SIGIS="undef" SIGNAME="powerpcfsm_0_BR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="BR0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="500000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="DBG" SIGIS="undef" SIGNAME="mpc106fsm_0_DBG0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="DBG0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="DH" RIGHT="31" SIGIS="undef" SIGNAME="powerpcfsm_0_DH">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="DH"/>
+            <CONNECTION INSTANCE="data_splitter_0" PORT="d_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="DL" RIGHT="31" SIGIS="undef" SIGNAME="powerpcfsm_0_DL">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="DL"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="TA" SIGIS="undef" SIGNAME="mpc106fsm_0_TA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="TA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TBST" SIGIS="undef" SIGNAME="powerpcfsm_0_TBST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="TBST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="TS" SIGIS="undef" SIGNAME="powerpcfsm_0_TS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="TS"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="TSIZ" RIGHT="2" SIGIS="undef" SIGNAME="powerpcfsm_0_TSIZ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="TSIZ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="0" NAME="TT" RIGHT="4" SIGIS="undef"/>
+        <PORT DIR="O" NAME="WT" SIGIS="undef" SIGNAME="powerpcfsm_0_WT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mpc106fsm_0" PORT="WT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/validity_block_0" HWVERSION="1.0" INSTANCE="validity_block_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="validity_block" VLNV="xilinx.com:module_ref:validity_block:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BLOCKNUM" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="hot_cache_design_validity_block_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="C0" SIGIS="undef" SIGNAME="C_0_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_0" PORT="val"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C1" SIGIS="undef" SIGNAME="C_1_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_1" PORT="val"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C2" SIGIS="undef" SIGNAME="C_2_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_2" PORT="val"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C3" SIGIS="undef" SIGNAME="C_3_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_3" PORT="val"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="mux" RIGHT="3" SIGIS="undef" SIGNAME="validity_block_0_mux">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="mux_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="500000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

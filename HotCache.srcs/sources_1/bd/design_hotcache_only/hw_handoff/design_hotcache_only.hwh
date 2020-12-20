@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Dec 20 13:37:16 2020" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_hotcache_only" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK_0" SIGIS="clk" SIGNAME="External_Ports_CLK_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hcm_0" PORT="CLK_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="WE" SIGIS="undef" SIGNAME="External_Ports_WE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hcm_0" PORT="WE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="address" RIGHT="11" SIGIS="undef" SIGNAME="External_Ports_address">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hcm_0" PORT="address"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="0" NAME="mux_in" RIGHT="3" SIGIS="undef" SIGNAME="External_Ports_mux_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hcm_0" PORT="mux_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" LEFT="0" NAME="value" RIGHT="7" SIGIS="undef" SIGNAME="External_Ports_value">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hcm_0" PORT="value"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="mux_out" RIGHT="3" SIGIS="undef" SIGNAME="hcm_0_mux_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="hcm_0" PORT="mux_out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/hcm_0" HWVERSION="1.0" INSTANCE="hcm_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hcm" VLNV="xilinx.com:module_ref:hcm:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BLOCKSIZE" VALUE="4"/>
+        <PARAMETER NAME="BLOCKNUM" VALUE="4"/>
+        <PARAMETER NAME="BITS" VALUE="8"/>
+        <PARAMETER NAME="ADDR" VALUE="12"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_hotcache_only_hcm_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="WE" SIGIS="undef" SIGNAME="External_Ports_WE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="WE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="address" RIGHT="11" SIGIS="undef" SIGNAME="External_Ports_address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="0" NAME="value" RIGHT="7" SIGIS="undef" SIGNAME="External_Ports_value">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="value"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="mux_in" RIGHT="3" SIGIS="undef" SIGNAME="External_Ports_mux_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mux_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="mux_out" RIGHT="3" SIGIS="undef" SIGNAME="hcm_0_mux_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mux_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CLK_0" SIGIS="undef" SIGNAME="External_Ports_CLK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
